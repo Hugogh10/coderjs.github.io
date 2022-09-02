@@ -6,18 +6,19 @@ main {
       font-size: $font-principal;
       background-color: orange;
     }
-    
-article {
-        img {
-          width: 25%;
-          height: 25%;
-          p {
-            background-color: black;
-            color: orange;
-            text-align: center;
-            border-radius: 1em;
-          }
-        }
+
+    article {
+      img {
+        width: 25%;
+        height: 25%;
       }
+    }
   }
+}
+p {
+    font-size: $font-principal;
+  background-color: black;
+  color: orange;
+  text-align: center;
+  border-radius: 1em;
 }

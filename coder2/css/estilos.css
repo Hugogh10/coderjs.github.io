@@ -32,11 +32,13 @@ main section h2 {
 main section article img {
   width: 25%;
   height: 25%; }
-  main section article img p {
-    background-color: black;
-    color: orange;
-    text-align: center;
-    border-radius: 1em; }
+
+p {
+  font-size: "Kanit", sans-serif;
+  background-color: black;
+  color: orange;
+  text-align: center;
+  border-radius: 1em; }
 
 footer p {
   font-size: "Montserrat", sans-serif;
