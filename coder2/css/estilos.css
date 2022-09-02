@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
   * body {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-image: url(../img/pelu.jpg);
     background-size: cover;
     color: aliceblue;
@@ -14,22 +14,25 @@
         text-decoration: none; }
         * body header a h1 {
           font-family: "Kanit", sans-serif;
-          color: orange;
-          margin-left: 10px; }
-          * body header a h1 nav ul li {
-            font-size: "Montserrat", sans-serif;
-            list-style: none;
-            display: inline-block;
-            margin: 10px;
-            margin-bottom: 10px; }
-            * body header a h1 nav ul li a {
-              text-decoration: none;
-              color: white; }
+          color: #f89a0d;
+          margin-left: 10px;
+          font-size: 4em; }
 
-main section h2 img {
-  width: 50px;
-  margin: 40px; }
-  main section h2 img p {
+nav ul li a {
+  font-size: "Montserrat", sans-serif;
+  display: inline-flex;
+  color: orange; }
+
+main section h2 {
+  color: black;
+  text-align: center;
+  font-size: "Kanit", sans-serif;
+  background-color: orange; }
+
+main section article img {
+  width: 25%;
+  height: 25%; }
+  main section article img p {
     background-color: black;
     color: orange;
     text-align: center;

@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-body {
-    font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  body {
+    font-family: $font-secundaria;
     background-image: url(../img/pelu.jpg);
     background-size: cover;
     color: aliceblue;
@@ -14,26 +14,22 @@ body {
         text-decoration: none;
         h1 {
           font-family: $font-principal;
-          color: orange;
+          color: rgb(248, 154, 13);
           margin-left: 10px;
-          nav {
-            ul {
-              li {
-                font-size: $font-secundaria;
-                list-style: none;
-                display: inline-block;
-                margin: 10px;
-                margin-bottom: 10px;
-                a {
-                  text-decoration: none;
-                  color: white;
-                }
-              }
-            }
-          }
+          font-size: 4em;
         }
       }
     }
   }
-
+}
+nav {
+  ul {
+    li {
+      a {
+        font-size: $font-secundaria;
+        display:inline-flex;
+        color: orange;
+      }
+    }
+  }
 }
