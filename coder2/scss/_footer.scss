@@ -1,14 +1,18 @@
 footer {
-        
-        p {
-        font-size:$font-secundaria;
-        background-color: orange;
-        bottom: 0;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        color: azure;
-        padding: 2em;
+  .foot {
+    background-color: orange;
 
+    .iconos {
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 }
+
+$redes: (
+  facebook: blue,
+  instagram: rgb(127, 14, 119),
+  whatsapp: green,
+);
