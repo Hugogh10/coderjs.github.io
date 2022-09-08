@@ -1,18 +1,48 @@
 footer {
-  .foot {
-    background-color: orange;
-
-    .iconos {
-      color: black;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
+  background-color: rgb(203, 128, 0);
+  p {
+    text-align: center;
+    font-family: $font-principal;
+    color: black;
+    font-size: 30px;
   }
 }
 
+.iconos {
+  text-align: center;
+  i {
+    font-size: 100px;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 60px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    
+  }
+}
 $redes: (
-  facebook: blue,
-  instagram: rgb(127, 14, 119),
-  whatsapp: green,
+  facebook:blue,
+  instagram:rgb(106, 0, 138),
+  whatsapp: green
+
 );
+
+@each $redsocial, $color in $redes {
+  .fa-#{$redsocial} {
+    background-color: $color;
+  }
+  
+}
+.fa-facebook{
+  &:hover{
+    background-color: black;
+  }
+}
+.fa-instagram{
+  @extend .fa-facebook;
+}
+.fa-whatsapp{
+  @extend .fa-facebook;
+}

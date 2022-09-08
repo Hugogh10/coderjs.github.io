@@ -1,24 +1,41 @@
 main {
-  section {
-    h2 {
-      color: black;
-      text-align: center;
-      font-size: $font-principal;
-      background-color: orange;
-    }
-
-    article {
-      img {
-        width: 25%;
-        height: 25%;
-      }
-    }
+  height: 100vh;
+  h2 {
+    color: black;
+    text-align: center;
+    font-family: $font-principal;  }
+}
+.cajas{
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+}
+.caja{
+  img{
+    max-width: 100%;
+    border: solid 5px black;
+    border-radius: 10px;
   }
 }
-p {
-    font-size: $font-principal;
-  background-color: black;
-  color: orange;
-  text-align: center;
-  border-radius: 1em;
+.descripcion {
+  font-size: 25px;
+  font-family: $font-secundaria;
+  padding: 5px;
+  border: solid 5px;
+  border-radius: 10px;
+}
+@mixin colores ($border, $color, $background){
+  background-color: $background;
+  color: $color;
+  border-color: $border;
+  
+}
+.cajas .descripcion1 {
+  @include colores(orange, black ,white )
+}
+.cajas .descripcion2 {
+  @include colores( black ,white, orange)
+}
+.cajas .descripcion3 {
+  @include colores(orange, white,black )
 }

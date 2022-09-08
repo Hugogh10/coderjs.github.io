@@ -10,6 +10,8 @@
     border: 3em;
     header {
       background-color: black;
+      display:flex;
+      justify-content: space-evenly;
       a {
         text-decoration: none;
         h1 {
@@ -23,12 +25,16 @@
   }
 }
 nav {
-  ul {
-    li {
-      a {
-        font-size: $font-secundaria;
-        display:inline-flex;
+  margin: auto;
+  display: flex;
+  ul{
+    li{
+      display: inline;
+      a{
         color: orange;
+        font-family: $font-secundaria;
+        font-size: 25px;
+        margin: 10px;
       }
     }
   }

@@ -9,7 +9,9 @@
     color: aliceblue;
     border: 3em; }
     * body header {
-      background-color: black; }
+      background-color: black;
+      display: flex;
+      justify-content: space-evenly; }
       * body header a {
         text-decoration: none; }
         * body header a h1 {
@@ -18,34 +20,84 @@
           margin-left: 10px;
           font-size: 4em; }
 
-nav ul li a {
-  font-size: "Montserrat", sans-serif;
-  display: inline-flex;
-  color: orange; }
+nav {
+  margin: auto;
+  display: flex; }
+  nav ul li {
+    display: inline; }
+    nav ul li a {
+      color: orange;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      margin: 10px; }
 
-main section h2 {
+main {
+  height: 100vh; }
+  main h2 {
+    color: black;
+    text-align: center;
+    font-family: "Kanit", sans-serif; }
+
+.cajas {
+  padding: 10px;
+  display: flex;
+  gap: 30px; }
+
+.caja img {
+  max-width: 100%;
+  border: solid 5px black;
+  border-radius: 10px; }
+
+.descripcion {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  border: solid 5px;
+  border-radius: 10px; }
+
+.cajas .descripcion1 {
+  background-color: white;
   color: black;
-  text-align: center;
-  font-size: "Kanit", sans-serif;
-  background-color: orange; }
+  border-color: orange; }
 
-main section article img {
-  width: 25%;
-  height: 25%; }
-
-p {
-  font-size: "Kanit", sans-serif;
-  background-color: black;
-  color: orange;
-  text-align: center;
-  border-radius: 1em; }
-
-footer p {
-  font-size: "Montserrat", sans-serif;
+.cajas .descripcion2 {
   background-color: orange;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: azure;
-  padding: 2em; }
+  color: white;
+  border-color: black; }
+
+.cajas .descripcion3 {
+  background-color: black;
+  color: white;
+  border-color: orange; }
+
+footer {
+  background-color: #cb8000; }
+  footer p {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    color: black;
+    font-size: 30px; }
+
+.iconos {
+  text-align: center; }
+  .iconos i {
+    font-size: 100px;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 60px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px; }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #6a008a; }
+
+.fa-whatsapp {
+  background-color: green; }
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
+  background-color: black; }
