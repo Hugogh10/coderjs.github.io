@@ -1,3 +1,7 @@
+//al tocar boton "solicitar turno" se despliega prompt para cargar datos del cliente 
+let boton = document.getElementById("boton");
+boton.addEventListener("click", () => {
+
 let nombreCliente = prompt("Ingrese su nombre");
 
 //constante con lista de servicios y precio
@@ -102,5 +106,50 @@ console.log(finalTurno)
         })
         break;
     }
+    //guardamos los datos y los devolvemos para dejar el turno asignado
+localStorage.setItem("finalTurno", JSON.stringify(finalTurno))
 
-}
+let turnoStorage = JSON.parse(localStorage.getItem("finalTurno"));
+
+//let clienteStorage = localStorage.getItem("nombreCliente");
+
+let botonTurno = document.getElementById("botonTurno");
+botonTurno.addEventListener("click", () => {
+if(turnoStorage.length > 0){
+    finalTurno = clienteStorage;
+    let mensaje = `Hola denuevo ${nombreCliente} su turno para ${servicio} es el dia ${fecha} precio: $${precio}`
+    alert(mensaje);
+}else{
+    alert ("No tiene reservas en este momento")
+}})
+
+}})
+//localStorage.clear() para borrar el turno
+// productos para la venta
+const productos = [
+    { id: 1 , nombre: "baño de crema" , precio: 2000},
+    { id: 2 , nombre: "gel" , precio: 500},
+    { id: 3 , nombre: "cera" , precio: 1200}, 
+    { id: 4 , nombre: "shampoo" , precio: 800},
+    { id: 5 , nombre: "oleo" , precio: 600},
+];
+let card = document.getElementById("card-tamplate");
+
+productos.forEach ((item) => {
+    let div = document.createElement("div");
+    div.innerHTML = `
+    <img src="..." class="card-img-top" alt="${item.id}">
+    <div class="card-body">
+      <h5 class="card-title">${item.nombre}</h5>
+      <p class="card-text">$${item.precio}</p>
+      <a href="#" class="btn btn-primary">COMPRAR</a>
+    </div>
+    `;
+    document.body.append(div);
+
+    let boton = document.getElementById(`boton${item.id}`);
+    const ejecutar =(id) => {
+        console.log(id);
+    }
+    boton.addEventListener("click", () => ejecutar(item.id))
+});

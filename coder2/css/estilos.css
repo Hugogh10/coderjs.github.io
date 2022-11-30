@@ -48,6 +48,14 @@ main {
   border: solid 5px black;
   border-radius: 10px; }
 
+#boton {
+  width: 50%;
+  font-size: x-large; }
+
+#botonTurno {
+  width: 50%;
+  font-size: x-large; }
+
 .descripcion {
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
@@ -71,7 +79,8 @@ main {
   border-color: orange; }
 
 footer {
-  background-color: #cb8000; }
+  background-color: #cb8000;
+  bottom: auto; }
   footer p {
     text-align: center;
     font-family: "Kanit", sans-serif;
