@@ -10,8 +10,7 @@
     border: 3em; }
     * body header {
       background-color: black;
-      display: flex;
-      justify-content: space-evenly; }
+      display: flex; }
       * body header a {
         text-decoration: none; }
         * body header a h1 {
@@ -32,11 +31,18 @@ nav {
       margin: 10px; }
 
 main {
-  height: 100vh; }
+  height: auto;
+  flex-wrap: wrap; }
   main h2 {
     color: black;
     text-align: center;
     font-family: "Kanit", sans-serif; }
+
+img {
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px; }
 
 .cajas {
   padding: 10px;
@@ -48,6 +54,69 @@ main {
   border: solid 5px black;
   border-radius: 10px; }
 
+.card {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  border: solid 5px;
+  border-radius: 10px;
+  color: orange; }
+
+.cantidadCarrito {
+  background-color: #ff9d00;
+  color: #000000;
+  border-radius: 100%;
+  font-size: 12px;
+  padding: 4px;
+  position: absolute;
+  display: none; }
+
+.shopContent {
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 2px; }
+
+.cardShop {
+  max-width: 15%;
+  display: inline-grid;
+  box-shadow: 0 4px 8px 0 #ff9d00;
+  background-color: black;
+  margin: 20px 10px 10px 5px;
+  text-align: center; }
+  .cardShop img {
+    width: 100%;
+    height: 100%; }
+
+.delete-producto {
+  cursor: pointer; }
+
+.modal-header-button {
+  cursor: pointer; }
+
+.modal-caja {
+  width: 70%;
+  margin: 0 10%;
+  max-height: 80vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+  border: solid 2px orange;
+  border-radius: 5px; }
+
+.modal-caja::-webkit-scrollbar {
+  display: none; }
+
+.modal-header {
+  display: flex;
+  width: 80%; }
+
 #boton {
   width: 50%;
   font-size: x-large; }
@@ -57,7 +126,7 @@ main {
   font-size: x-large; }
 
 .descripcion {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
   border: solid 5px;

@@ -1,0 +1,7 @@
+[
+    { "id": 1 , "nombre": "baño de crema" , "precio": 2000 , "img": "./img/bañocrema.jpg" , "cantidad": 1},
+    { "id": 2 , "nombre": "gel" , "precio": 500 , "img": "./img/gel.jpg" , "cantidad": 1},
+    { "id": 3 , "nombre": "cera" , "precio": 1200 , "img": "./img/cera.jpg" , "cantidad": 1}, 
+    { "id": 4 , "nombre": "shampoo" , "precio": 800, "img": "./img/shampoo.jpg" , "cantidad": 1},
+    { "id": 5 , "nombre": "oleo" , "precio": 600 , "img": "./img/oleo.jpg" , "cantidad": 1}
+]

@@ -39,14 +39,14 @@
           <p class="descripcion descripcion1">
             TIENDA DE PRODUCTOS
           </p>
-          <button id="boton">LA TIENDA</button>
+          <button id="verCarrito">CARRITO <span id="cantidadCarrito" class="cantidadCarrito"></span> </button>
         </article>
         <article class="caja">
           <img src="./img/cortemujer.png" alt="cortemujer" />
           <p class="descripcion descripcion2">
             CONTAMOS CON TURNOS ONLINE.
           </p>
-          <button id="boton">SOLICITA TU TURNO</button>
+          <button id="botonSolicitud">SOLICITA TU TURNO</button>
         </article>
         <article class="caja">
           <img src="./img/cortemujer.png" alt="cortemujer" />
@@ -57,12 +57,13 @@
         </article>
       </section>
       <section>
-        <div class="card c:red" style="width: 18rem;" id=card-template>
-          //tarjetas con bootstrap
-        </div>
+        //contenedor de productos
+        <div class="shopContent" style="width: 18rem;" id="shopContent"></div>
       </section>
+      //contenedor del modal
+      <div id="modal-caja" class="modal-caja"></div>
     </main>
-    <footer>
+     <footer>
       <p>Nuestras Redes</p>
       <div class="iconos">
         <i class="fa-brands fa-facebook"></i>
@@ -70,6 +71,10 @@
         <i class="fa-brands fa-whatsapp"></i>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./js/productos.json"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
   </body>
 </html>
