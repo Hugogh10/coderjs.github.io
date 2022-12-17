@@ -46,6 +46,7 @@ img {
   justify-content:center;
   flex-wrap: wrap;
   margin: 10px 10px 10px 2px;
+  justify-content: center;
 }
 .cardShop{
   max-width: 15%;
@@ -77,17 +78,31 @@ img {
   position: fixed;
   overflow: auto;
   z-index: 9;
-  top: 12vh;
+  top: 11vh;
   scrollbar-color: none;
   border: solid 2px orange;
   border-radius: 5px;
 }
+.fa-xmark{
+  color: red;
+  height: 5vh;
+  font-size: x-large;
+  justify-content: center;
+}
 .modal-caja::-webkit-scrollbar{
   display: none;
+}
+.total-contenido{
+  font-size: 6vh;
+  background-color: orange;
+  color: #000000;
+  justify-content: center;
+  text-align: center;
 }
 .modal-header{
   display: flex;
   width: 80%;
+  color: #ff9d00;
 }
 #boton {
   width: 50%;

@@ -10,7 +10,7 @@ const pintarCarrito = () => {
     modalCaja.append(modalHeader);
 
     const modalbutton = document.createElement("h1");
-    modalbutton.innerText = "X";
+    modalbutton.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
     modalbutton.className = "modal-header-button";
 
     modalbutton.addEventListener("click", () => {
@@ -28,8 +28,10 @@ const pintarCarrito = () => {
     <p>${item.precio}$</p>
     <p>${item.cantidad}u.</p>
     <p>Total: $${item.cantidad * item.precio}</p>
-    <span class="delete-producto"> X </span>
+    <i class="fa-solid fa-xmark delete-producto"></i>
+    
     `;
+    //<span class="delete-producto"> </span>
 //contamos con length la cantidad de articulos en el loca
     modalCaja.append(carritoContenido);
     console.log(carrito.length);  
